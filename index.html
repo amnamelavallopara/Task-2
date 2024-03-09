@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/section1.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <title>Sneat.app clone</title>
+  </head>
+  <body>
+    <nav></nav>
+
+    <header>
+      <div class="left">
+        <button class="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(50, 71, 92, 0.87);"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+        </button>
+        <button class="search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(50, 71, 92, 0.87);"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+        </button>
+      </div>
+
+      <input class="search_bar" type="text" placeholder="Search &nbsp;">
+
+      <div class="right">
+        <button style="margin-left: 0px;" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(50, 71, 92, 0.87);"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+        </button>
+        <button class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(50, 71, 92, 0.87);"><path d="M19 13.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v3.586l-1.707 1.707A.996.996 0 0 0 3 16v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a.996.996 0 0 0-.293-.707L19 13.586zM19 17H5v-.586l1.707-1.707A.996.996 0 0 0 7 14v-4c0-2.757 2.243-5 5-5s5 2.243 5 5v4c0 .266.105.52.293.707L19 16.414V17zm-7 5a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22z"></path></svg>
+        </button>
+        <button onclick="myFunction()" class="light">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(50, 71, 92, 0.87);"><path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"></path></svg>
+        </button>
+        <button class="profile">
+          <img src="image/pro_pic.png">
+        </button>
+      </div>
+    </header>
+
+    <div style="display: flex; flex-direction: row;">
+      <section>
+        <div style="display: inline-block; width: 350px;"><h5 class="badge_head">Congratulations John! &nbsp;🎉</h5>
+          <p class="para">You have done 72% 🤩 more sale today.<br>Check your new raising badge in your profile.</p>
+          <button class="ripple">VIEW BADGES</button>
+        </div>
+        <div style="flex: 1;"></div>
+        <div style="width: 300;">
+          <img style="height: 180px; margin-right: 40px; margin-bottom: 0px; padding-bottom: 0px;" src="image/man.png">
+        </div>
+      </section>
+        
+      <div class="section1">
+        <div style="display: flex;">
+          <img width="42" src="image/pie.png">
+          <span style="flex: 1;"></span>
+          <span style="justify-content: center; margin-right: 17px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(139, 132, 132);"><path d="M10 10h4v4h-4zm0-6h4v4h-4zm0 12h4v4h-4z"></path></svg>
+          </span>
+        </div>
+        <p style="margin-top: 20px; margin-bottom: 7px; color: rgba(80, 78, 78, 0.664);">Profit</p>
+        <p style="margin-top: 8px; margin-bottom: 0px; font-size: 25px; color: rgba(65, 61, 61, 0.884);">$12,628</p>
+        <p style="margin-top: 15px; color: rgb(94, 211, 48); font-size: 15px; font-weight: 550; display: flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" style="fill: rgb(94, 211, 48);"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>72.8%</p>
+      </div>
+        
+
+      <div class="section1" style="margin-left: 8px;">
+          <div style="display: flex;">
+            <img width="42" src="image/paypal.png">
+            <span style="flex: 1;"></span>
+            <span style="justify-content: center; margin-right: 17px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(139, 132, 132);"><path d="M10 10h4v4h-4zm0-6h4v4h-4zm0 12h4v4h-4z"></path></svg>
+            </span>
+          </div>
+          <p style="margin-top: 20px; margin-bottom: 7px; color: rgba(80, 78, 78, 0.664);">Payments</p>
+          <p style="margin-top: 8px; margin-bottom: 0px; font-size: 25px; color: rgba(65, 61, 61, 0.884);">$2,468</p>
+          <p style="margin-top: 15px; color: rgba(236, 91, 80, 0.712); font-size: 15px; font-weight: 550; display: flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" style="fill: rgba(236, 91, 80, 0.712);"><path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z"></path></svg>-14.82%</p>
+      </div>
+
+      <div style="display: flex;">
+        <div class="section1" style="margin-left: 8px;">
+          <div style="display: flex;">
+            <img width="42" src="image/card.png">
+            <span style="flex: 1;"></span>
+            <span style="justify-content: center; margin-right: 17px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(139, 132, 132);"><path d="M10 10h4v4h-4zm0-6h4v4h-4zm0 12h4v4h-4z"></path></svg>
+            </span>
+          </div>
+          <p style="margin-top: 20px; margin-bottom: 7px; color: rgba(80, 78, 78, 0.664);">Transactions</p>
+          <p style="margin-top: 8px; margin-bottom: 0px; font-size: 25px; color: rgba(65, 61, 61, 0.884);">$14,857</p>
+          <p style="margin-top: 15px; color: rgb(94, 211, 48); font-size: 15px; font-weight: 550; display: flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" style="fill: rgb(94, 211, 48);"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>28.14%</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex;">
+      <div class="main">
+        <div style="display: flex; margin-top: 20px; margin-left: 0px;">
+          <span style="font-size: 20px; font-weight: 530; color: rgba(68, 64, 64, 0.932);">Total Revenue</span>
+          <span style="flex: 1;"></span>
+          <span style="justify-content: center; margin-right: 17px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(139, 132, 132);"><path d="M10 10h4v4h-4zm0-6h4v4h-4zm0 12h4v4h-4z"></path></svg>
+          </span>
+        </div>
+        <div style="display: flex;" id="chart"></div>
+      </div>
+        
+      <div class="main1">
+        <div style="display: flex; flex-direction: row;">
+          <span style="margin-top: 20px; flex: 1;"></span>
+          <button class="buttonx">
+            amna
+          </button>
+          <span style="margin-top: 20px; flex: 1;"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction(){
+          let a=document.body;
+          a.classList.toggle("dark_mode");
+      }
+    </script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

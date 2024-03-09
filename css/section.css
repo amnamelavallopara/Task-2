@@ -1,0 +1,102 @@
+section{
+    display: flex;
+    flex: 3;
+    /* flex-direction: row; */
+    background-color: rgba(255, 255, 255, 0.349);
+    padding-left: 27px;
+    padding-top: 16px;
+    border-radius: 8px;
+    height: 180px;
+    margin-left: 16px;
+    margin-top: 23px;
+    margin-right: 16px;
+    box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.034);
+}
+
+.section1{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.349);
+    padding-left: 25px;
+    padding-top: 25px;
+    border-radius: 8px;
+    height: 180px;
+    margin-left: 16px;
+    margin-top: 23px;
+    margin-right: 16px;
+    justify-content: start;
+    align-items: start;
+    box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.034);
+}
+
+.badge_head{
+    font-weight: 600;
+    font-size: larger;
+    color: rgb(105, 108, 255);
+    display: inline-block;
+    margin: 17px 0px 30px;
+}
+
+.para{
+    font-size: medium;
+    color: rgba(128, 128, 128, 0.76);
+    margin: 0px;
+    display: block;
+}
+
+section img{
+    height: 20px;
+}
+
+.ripple{
+    background-color: rgba(105, 108, 255, 0.123);
+    color: rgb(105, 108, 255);
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    height: 30px;
+    margin-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.view_badge:active{
+    background-color: rgba(105, 108, 255, 0.411);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background-color: rgba(105, 108, 255, 0.164);
+    cursor: pointer;
+    transition: .5s;
+    background: rgba(105, 108, 255, 0.192) radial-gradient(circle, transparent 1%, rgba(105, 108, 255, 0.384) 1%) center/15000%; 
+}
+.ripple:active {
+    background-color: rgba(105, 108, 255, 0);
+    background-size: 100%;
+    transition: background 0s;
+}
+  
+  /* Button style */
+  /* button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+  } */
+  

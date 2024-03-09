@@ -1,0 +1,13 @@
+body{
+    background-color: rgba(219, 219, 235, 0.7);
+    height: 3000px;
+    font-family: Public Sans,sans-serif,-apple-system,blinkmacsystemfont,Segoe UI,roboto,Helvetica Neue,arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;
+}
+
+.dark_mode{
+    background-color: rgba(25, 23, 41, 0.945);
+}
+
+.dark_class{
+    background-color: rgba(48, 49, 82, 0.397);
+}
